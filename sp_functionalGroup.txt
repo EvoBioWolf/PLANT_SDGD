@@ -1,0 +1,23 @@
+species	Funtional group
+AjuRep	small herb
+AloPra	grass
+ArrEla	grass
+BelPer	small herb
+CreBie	tall herb
+DauCar	tall herb
+GalMol	tall herb
+GerPra	tall herb
+KnaArv	tall herb
+LatPra	legume
+LeuVul	tall herb
+LotCor	legume
+LuzCam	grass
+MedVar	legume
+PlaLan	small herb
+PlaMed	small herb
+PriVer	small herb
+RanAcr	tall herb
+TriFla	grass
+TriPra	legume
+VerCha	small herb
+VicCra	legume
