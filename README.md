@@ -50,11 +50,23 @@ The scripts are numbered `01` through `08` to follow the chronological order of 
 - `07_plotLevel_Fst.py`: Calculates pairwise $F_{ST}$ between experimental plots based on allele frequencies.
 - `07_plotLevel_Fst_Figs.R`: Generates Figure 2B ($F_{ST}$ comparisons between low and high diversity plots).
 
-### 8. Simulation (Drift Modeling)
+### 8. Plot-Level Genetic Diversity (Expected Heterozygosity) 
+
+*Corresponds to "Plot-level expected heterozygosity" in Methods.* 
+
+- `08_plotLevel_expected_heterozygosity.py`: Calculates the mean expected heterozygosity ($H_{exp}$) for each experimental plot.     
+
+- `08_plotLevel_expected_heterozygosity.sh`: Bash runner to execute the Python script across multiple species VCFs. 
+
+- `08_plotLevel_expected_heterozygosity_submit.sh`: HPC cluster submission script.
+
+
+
+### 9. Simulation (Drift Modeling)
 
 *Corresponds to "Ne simulation analysis" in Methods.*
 
-- `08_simulation.R`: Simulates the expected loss of genetic diversity due to the "dilution effect" (reduced population size) under neutral drift, and compares empirical data to these theoretical curves (Figure 3).
+- `09_simulation.R`: Simulates the expected loss of genetic diversity due to the "dilution effect" (reduced population size) under neutral drift, and compares empirical data to these theoretical curves (Figure 3).
 
 ## Metadata Files
 
@@ -76,7 +88,7 @@ The following software versions were used in this analysis:
 
 - R
 
-   (4.2.2)
+  (4.2.2)
 
   - Key packages: `glmmTMB`, `metafor`, `tidyverse`
 
@@ -84,4 +96,4 @@ The following software versions were used in this analysis:
 
 ## Usage Note on `_submit.sh` Files
 
-Files ending in `_submit.sh` (e.g., `04_cohortCalling_submit.sh`) are wrapper scripts used to submit jobs to a High-Performance Computing (HPC) cluster (via Slurm). The core logic is contained in the corresponding `.sh`, `.R`, or `.py` files.
+Files ending in `_submit.sh` (e.g., `04_cohortCalling_submit.sh`) are wrapper scripts used to submit jobs to a High-Performance Computing (HPC) cluster (e.g., via Slurm or PBS). The core logic is contained in the corresponding `.sh`, `.R`, or `.py` files.
